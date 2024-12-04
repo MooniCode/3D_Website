@@ -8,16 +8,9 @@
     <link rel="stylesheet" href="/cssFiles/contact.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="/jsFiles/contact.js" defer></script>
 </head>
 <body>
-    <div id="loading-screen">
-        <div class="loading-message">Cooking...</div>
-        <div class="loading-bar-container">
-            <div id="loading-bar"></div>
-        </div>
-        <div id="loading-percentage">0%</div>
-    </div>
-
     <div class="banner">
         <div class="navbar">
             <div class="logo-container">
@@ -37,27 +30,64 @@
             <p>Got questions? We'd love to hear from you!</p>
         </div>
 
-        <div class="contact-container">
-            <div id="canvas-container">
-                <!-- Your 3D model will go here -->
-            </div>
-
-            <div class="contact-section">
-                <div class="contact-form">
-                    <div class="form-header">
-                        <h2>Send us a Message</h2>
-                        <p>We'll get back to you as soon as possible</p>
+        <div class="contact-wrapper">
+            <div class="contact-container">
+                <div class="contact-info-sidebar">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <h2>Get in Touch</h2>
+                            <p>We're here to help and answer any questions you might have</p>
+                        </div>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <p>info@microwavesstudios.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="info-content">
+                                    <h3>Phone</h3>
+                                    <p>(555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info-content">
+                                    <h3>Address</h3>
+                                    <p>Botenkopersstraat 2<br>8500 Kortrijk</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@MooniPuss" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                    
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-header">
+                            <h2>Send us a Message</h2>
+                            <p>Fill out the form below, and we'll get back to you as soon as possible</p>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -70,39 +100,22 @@
                             <textarea id="message" name="message" required></textarea>
                         </div>
                         
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
-                </div>
-
-                <div class="contact-info-grid">
-                    <div class="contact-info-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>info@microwavesstudios.com</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>(555) 123-4567</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Address</h3>
-                        <p>Botenkopersstraat 2<br>8500 Kortrijk</p>
-                    </div>
                 </div>
             </div>
         </div>
 
         <footer class="footer">
             <div class="footer-content">
-                <!-- Logo and Slogan Section -->
                 <div class="footer-section">
                     <p class="footer-slogan">Creating innovative gaming <br>experiences since 1945</p>
                     <img src="/images/logo.png" alt="Microwave Studios Logo" class="footer-logo">
                 </div>
     
-                <!-- Links Section -->
                 <div class="footer-section">
                     <ul class="footer-links">
                         <li><a href="/htmlPages/index.html">Home</a></li>
@@ -130,7 +143,6 @@
                     </div>
                 </div>
     
-                <!-- Contact Section -->
                 <div class="footer-section">
                     <div class="contact-info">
                         <p>Email: info@microwavesstudios.com</p>
@@ -142,6 +154,6 @@
             </div>
         </footer>
     </div>
-    <script type="module" src="/jsFiles/main.js"></script>
+    <script type="module" src="/jsFiles/contact.js"></script>
 </body>
 </html>
