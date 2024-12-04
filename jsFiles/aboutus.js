@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'https://unpkg.com/three@latest/build/three.module.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // Scene setup
 const scene = new THREE.Scene();
