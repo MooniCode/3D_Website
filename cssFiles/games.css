@@ -9,6 +9,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .navbar{
@@ -87,7 +88,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)),
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)),
     url('/images/Level1Image.png');
     background-size: cover;
     background-position: center;
@@ -160,7 +161,7 @@ html, body {
 }
 
 .purpose {
-    background: #f0f2f4;
+    background: #dfe2e5;
 }
 
 .character-showcase {
