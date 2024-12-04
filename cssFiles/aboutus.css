@@ -54,11 +54,9 @@ html, body {
 }
 
 #canvas-container {
-    position: absolute;
-    right: 110%;  /* Position from right side */
-    transform: translateY(-60%);  /* Center adjustment */
-    width: 50%;  /* Or whatever width you want for your 3D scene */
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 400px;  /* Match your section height */
     z-index: 2;
     pointer-events: none;
 }

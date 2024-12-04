@@ -64,7 +64,7 @@ loader.load(
             model = gltf.scene;
             
             // Your existing model setup code...
-            model.position.set(0, 0, 0);
+            model.position.set(-1, 0.5, 0);
             model.scale.set(2.3, 2.3, 2.3);
             model.rotation.x = baseRotationX;
             model.rotation.y = baseRotationY;
